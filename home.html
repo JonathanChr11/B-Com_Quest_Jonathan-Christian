@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purply</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="gradient">
+
+    <nav class="navbar">
+        <p style="margin-top: 20px; margin-left: 20px; font-size: 25px;">PURPLY</p>
+       <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="navbar-bars">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul id="menuList">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#champion">Achievements</a></li>
+        <li><a href="#mentor">Chief & Director</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#timeline">History</a></li>
+        </ul>
+        <a href="login.html"><button>Login</button></a>
+    </nav>
+
+    <section class="background-animation">
+        <ul class="box">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+        <section class="landing-page">
+        <div class="container">
+            <div class="title">
+                <h1>WELCOME TO</h1>
+                <h1>PURPLY</h1>
+                <h5>Since 2018</h5>
+                <a href=""><button class="join">Lets get started !</button></a>
+            </div>
+            <div class="link">
+            <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"><iframe width="500" height="315" src="https://www.youtube.com/embed/O4ggMobNDac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/embed/O4ggMobNDac";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          playerVars: {
+            'playsinline': 1
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+            </div>
+        </div>
+        </section>
+
+    <a name="champion"></a>
+    <section class="champion-prize">
+        <div class="container" data-aos="fade-down">
+            <h1>Achievements</h1>
+            <div class="winner">
+            <div class="second-winner" data-aos="fade-down">
+                <img src="images/champion logo.png"alt="">
+                <h2>Best Production Of The Year</h2><br>
+                <p>2020</p>
+            </div>
+            <div class="first-winner" data-aos="fade-down">
+                <img src="images/champion logo.png" alt="">
+                <h2>Top 10 Richest Company</h2><br>
+                <p>2019</p>
+            </div>
+            <div class="third-winner" data-aos="fade-down">
+                <img src="images/champion logo.png"alt="">
+                <h2>Lorem Ipsum</h2><br>
+                <p>2021</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <a name="mentor"></a>
+    <section class="mentor-jury">
+        <div class="container" data-aos="fade-down">
+            <h1>Chief & Director</h1>
+            <div class="mentor-title" data-aos="fade-down">
+            <h5>Our Chief</h5>
+            <div class="mentor">
+                <div class="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true" onclick="plusSlides(-1)"></i>
+                </div>
+            <div class="mentors fade">
+                <div class="mentor-picture1"></div>
+                <div class="mentor-name">
+                    <center><h5>Nama CEO</h5></center>
+                </div>
+            </div>
+            <div class="mentors fade">
+                <div class="mentor-picture2"></div>
+                <div class="mentor-name">
+                    <center><h5>Nama CFO</h5></center>
+                </div>
+            </div>
+            <div class="mentors fade">
+                <div class="mentor-picture3"></div>
+                <div class="mentor-name">
+                    <center><h5>Nama CMO</h5></center>
+                </div>
+            </div>
+            <div class="mentors fade">
+                <div class="mentor-picture4"></div>
+                <div class="mentor-name">
+                    <center><h5>Nama CPO</h5></center>
+                </div>
+            </div>
+            <div class="mentors fade">
+                <div class="mentor-picture5"></div>
+                <div class="mentor-name">
+                    <center><h5>Nama CIO</h5></center>
+                </div>
+            </div>
+            <div class="mentors fade">
+                <div class="mentor-picture6"></div>
+                <div class="mentor-name">
+                    <center><h5>Nama COO</h5></center>
+                </div>
+            </div>
+            <div class="mentors fade">
+                <div class="mentor-picture7"></div>
+                <div class="mentor-name">
+                    <center><h5>Nama CTO</h5></center>
+                </div>
+            </div>
+            <div class="mentors fade">
+                <div class="mentor-picture8"></div>
+                <div class="mentor-name">
+                    <center><h5>Nama</h5></center>
+                </div>
+            </div>
+            <div class="mentors fade">
+                <div class="mentor-picture9"></div>
+                <div class="mentor-name">
+                    <center><h5>Nama</h5></center>
+                </div>
+            </div>
+            <div class="next">
+                <i class="fa fa-angle-right" aria-hidden="true" onclick="plusSlides(1)"></i>
+            </div>
+
+            <script>
+                var mentorIndex = 1;
+                showMentor(mentorIndex);
+                
+                function plusSlides(n) {
+                  showMentor(mentorIndex += n);
+                }
+                
+                function showMentor(n) {
+                  var i;
+                  var mentors = document.getElementsByClassName("mentors");
+                  if (n > mentors.length) {mentorIndex = 1}    
+                  if (n < 1) {mentorIndex = mentors.length}
+                  for (i = 0; i < mentors.length; i++) {
+                      mentors[i].style.display = "none";
+                  }
+                  mentors[mentorIndex-1].style.display = "block";
+                }
+                </script>
+
+        </div>
+        </div>
+
+        <div class="jury-title" data-aos="fade-down">
+            <h5>Our Director</h5>
+            <div class="jury">
+            <div class="first-jury">
+                <div class="jury-picture1"></div>
+                <div class="jury-name">
+                    <center><h5>Nama Director</h5></center>
+                </div>
+            </div>
+            <div class="second-jury">
+                <div class="jury-picture2"></div>
+                <div class="jury-name">
+                    <center><h5>Nama Director</h5></center>
+                </div>
+            </div>
+            <div class="third-jury">
+                <div class="jury-picture3"></div>
+                <div class="jury-name">
+                    <center><h5>Nama Director</h5></center>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <a name="about"></a>
+    <section class="about">
+        <div class="container" data-aos="zoom-in-up">
+            <div class="about-desc">
+            <div class="left">
+                <h1>About</h1>
+                <h1>PURPLY</h1>
+                <h5>Deskripsi tentang PURPLY</h5>
+                <a href=""><button class="guide">Company Information</button></a><br>
+                <a href=""><button class="reg">Get Started!</button></a>
+            </div>
+            <div class="right">
+                <img src="images/about hackaton 1.png" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="why">
+        <div class="container" data-aos="zoom-in-up">
+            <h1>Why PURPLY?</h1>
+              <!--image slider start-->
+              <div class="slider">
+                <div class="slides">
+ <!--radio buttons start-->
+           <input type="radio" name="radio-btn" id="radio1">
+           <input type="radio" name="radio-btn" id="radio2">
+           <input type="radio" name="radio-btn" id="radio3">
+           <input type="radio" name="radio-btn" id="radio4">
+           <input type="radio" name="radio-btn" id="radio5">
+           <!--radio buttons end-->
+           <!--slide images start-->
+           <div class="slide first">
+               <div class="why-desc">
+                   <img class="portof" src="images/portofolio.png" alt="">
+                   <div class="desc-list">
+                <h1>lorem</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia repellendus architecto. Optio quasi laborum voluptas dignissimos dolorum cupiditate dolor! In earum enim praesentium dicta voluptates rem, iure omnis quisquam!</p>
+            </div>  
+            </div>
+           </div>
+           <div class="slide">
+            <div class="why-desc">
+                <img src="images/networking.png" alt="" style="width: 53%;">
+                <div class="desc-list">
+                    <h1>lorem</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia repellendus architecto. Optio quasi laborum voluptas dignissimos dolorum cupiditate dolor! In earum enim praesentium dicta voluptates rem, iure omnis quisquam!</p>
+         </div>  
+         </div>
+           </div>
+           <div class="slide">
+            <div class="why-desc">
+                <img src="images/skills.png" alt="" style="width: 72%;">
+                <div class="desc-list">
+                    <h1>lorem</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia repellendus architecto. Optio quasi laborum voluptas dignissimos dolorum cupiditate dolor! In earum enim praesentium dicta voluptates rem, iure omnis quisquam!</p>
+         </div>  
+         </div>
+           </div>
+           <div class="slide">
+            <div class="why-desc">
+                <img src="images/experience.png" alt="" style="width: 68%;">
+                <div class="desc-list">
+                    <h1>lorem</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia repellendus architecto. Optio quasi laborum voluptas dignissimos dolorum cupiditate dolor! In earum enim praesentium dicta voluptates rem, iure omnis quisquam!</p>
+         </div>  
+         </div>
+           </div>
+           <div class="slide">
+            <div class="why-desc">
+                <img src="images/teamwork.png" alt="" style="width: 80%;">
+                <div class="desc-list">
+                    <h1>lorem</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia repellendus architecto. Optio quasi laborum voluptas dignissimos dolorum cupiditate dolor! In earum enim praesentium dicta voluptates rem, iure omnis quisquam!</p>
+         </div>  
+         </div>
+           </div>
+           <!--slide images end-->
+           <!--automatic navigation start-->
+           <div class="navigation-auto">
+               <div class="auto-btn1"></div>
+               <div class="auto-btn2"></div>
+               <div class="auto-btn3"></div>
+               <div class="auto-btn4"></div>
+               <div class="auto-btn5"></div>
+           </div>
+           <!--automatic navigation end-->
+           </div>
+           <!--manual navigation start-->
+           <div class="navigation-manual">
+           <label for="radio1" class="manual-btn"></label>
+           <label for="radio2" class="manual-btn"></label>
+           <label for="radio3" class="manual-btn"></label>
+           <label for="radio4" class="manual-btn"></label>
+           <label for="radio5" class="manual-btn"></label>
+           </div>
+           <!--manual navigation end-->
+       </div>
+       <!--image slider end-->
+       <script type="text/javascript">
+           var counter = 1;
+          setInterval(function(){
+              document.getElementById('radio' + counter).checked = true;
+               counter++;
+               if(counter > 5){
+                counter = 1;
+               }
+           }, 5000);
+           </script>            
+        </div>
+    </section>
+
+    <a name="faq"></a>
+    <div class="background">
+    <section class="faq">
+        <div class="container" data-aos="zoom-in-down">
+            <h1>FAQ</h1>
+            <div class="faq-qwest">
+                <div class="left" data-aos="zoom-in-down">
+                    <div class="faq-list" id="question1">
+                        <a class="faq-desc" href="#question1">
+                            What is PURPLY?
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </a>
+                        <div class="answer">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, iste voluptates? Sapiente magnam eligendi eveniet nam, voluptatum provident similique itaque, voluptatibus soluta qui quas aperiam eius! Tempora tempore quisquam quia?
+                        </div>
+                    </div>
+
+                    <div class="faq-list" id="question2">
+                        <a class="faq-desc" href="#question2">
+                            How did PURPLY invented?
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </a>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, tenetur dolorem! Hic recusandae consectetur, numquam tenetur facere fugit, ut laudantium laborum aperiam earum aliquam ea itaque soluta. Fuga, aliquam at.
+                        </div>
+                    </div>
+
+                    <div class="faq-list" id="question3">
+                        <a class="faq-desc" href="#question3">
+                            What are the requirements to become PURPLY employee?
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </a>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa doloribus laboriosam eos? Atque exercitationem accusantium similique rem itaque explicabo ad, aliquam cupiditate labore vitae est deserunt quas ab odit provident!
+                        </div>
+                    </div>
+
+                    <div class="faq-list" id="question4">
+                        <a class="faq-desc" href="#question4">
+                            Lorem ipsum dolor sit amet?
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </a>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nesciunt, beatae possimus recusandae temporibus ab ducimus corrupti molestias quisquam. Itaque pariatur impedit fugit cum blanditiis quia reiciendis explicabo, vero cupiditate?
+                        </div>
+                    </div>
+
+                    <div class="faq-list" id="question5">
+                        <a class="faq-desc" href="#question5">
+                            Lorem ipsum dolor sit amet?
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </a>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, consequuntur obcaecati autem distinctio impedit a sunt magni cum eaque natus iure unde commodi minima possimus neque officiis recusandae dolores fuga!
+                        </div>
+                    </div>
+
+                    <div class="faq-list" id="question6">
+                        <a class="faq-desc" href="#question6">
+                           Lorem ipsum dolor sit amet?
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </a>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae velit mollitia quia deserunt aliquid, obcaecati, ad suscipit vitae iure voluptates animi blanditiis tenetur eum corrupti soluta dignissimos, quasi debitis?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right" data-aos="zoom-in-down">
+                    <img src="images/FAQ.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="timeline"></a>
+    <section class="timeline">
+       <div class="container" data-aos="fade-down">
+        <h1>History</h1>
+        <div class="times">
+        <div class="left">
+            <img src="images/time.png" alt="">
+        </div>
+        <div class="right">
+        <div class="timeline-list">
+            <div class="timelines">
+                <h5>lorem ipsum (2016)</h5>
+            </div><br><br><br><br><br>
+            <div class="timelines">
+                <h5>lorem ipsum (2016)</h5>
+            </div><br><br><br><br><br>
+            <div class="timelines">
+                <h5>lorem ipsum (2017)</h5>
+                <a href="#">Click Here</a>
+            </div><br><br><br><br><br>
+            <div class="timelines">
+                <h5>PURPLY BORN (2018)</h5>
+                <a href="#">Click Here</a>
+            </div>
+        </div>
+        </div>
+    </div>
+       </div>
+    </section>
+
+    <section class="sponsor">
+        <div class="container" data-aos="zoom-in">
+            <h1>Sponsor</h1>
+            <div class="sponsors">
+            <div class="platinum" data-aos="zoom-in">
+                <h5>Platinum Sponsor</h5>
+                <img src="images/Sponsor/tokped.jpg" alt="">
+            </div>
+            <div class="gold" data-aos="zoom-in">
+                <h5>Gold Sponsors</h5>
+                <img src="images/Sponsor/lokerid.png" alt="" style="margin-right: 100px;">
+                <img src="images/Sponsor/dicoding.png" alt="">
+                <img src="images/Sponsor/jagel.png" alt="" style="margin-left: 100px;">
+            </div>
+            <div class="silver" data-aos="zoom-in">
+                <h5>Silver Sponsors</h5>
+                <img src="images/Sponsor/discord.png" alt="" style="margin-right: 50px;">
+                <img src="images/Sponsor/webflow.png" alt="" style="margin-right: 50px;">
+                <img src="images/Sponsor/niagahoster.png" alt="">
+                <img src="images/Sponsor/figma.png" alt="" style="margin-left: 50px;">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="media-partner">
+        <div class="container" data-aos="zoom-in">
+            <h1>Media Partners</h1>
+              <!--image slider start-->
+              <div class="slider2">
+                <div class="slides2">
+ <!--radio buttons start-->
+           <input type="radio" name="radia-btn" id="radia1">
+           <input type="radio" name="radia-btn" id="radia2">
+           <input type="radio" name="radia-btn" id="radia3">
+           <!--radio buttons end-->
+           <!--slide images start-->
+           <div class="slide2 first">
+               <div class="medpar">
+                   <img src="images/medpar/1.png" alt="">
+            </div>  
+            </div>
+           <div class="slide2">
+            <div class="medpar">
+                <img src="images/medpar/2.png" alt="">
+         </div>
+           </div>
+           <div class="slide2">
+            <div class="medpar">
+                <img src="images/medpar/3.png" alt="">  
+         </div>
+           </div>
+           <!--slide images end-->
+           <!--automatic navigation start-->
+           <div class="navigation-auto2">
+               <div class="auto-btn1"></div>
+               <div class="auto-btn2"></div>
+               <div class="auto-btn3"></div>
+           </div>
+           <!--automatic navigation end-->
+           </div>
+           <!--manual navigation start-->
+           <div class="navigation-manual2">
+           <label for="radia1" class="manual-btn2"></label>
+           <label for="radia2" class="manual-btn2"></label>
+           <label for="radia3" class="manual-btn2"></label>
+           </div>
+           <!--manual navigation end-->
+       </div>
+       <!--image slider end-->
+       <script type="text/javascript">
+           var counter2 = 1;
+          setInterval(function(){
+              document.getElementById('radia' + counter2).checked = true;
+               counter2++;
+               if(counter2 > 3){
+                counter2 = 1;
+               }
+           }, 5000);
+           </script>            
+        </div>
+    </section>
+
+    <section class="other-events">
+        <div class="container" data-aos="fade-up">
+            <h1>Events</h1>
+            <div class="oe-list">
+            <div class="vc">
+                <h5>LOREM</h5>
+                <img src="images/virtual conference.png" alt="">
+                <center><button style="cursor: pointer;">Register Now !</button></center>
+            </div>
+            <div class="dw">
+                <h5>LOREM</h5>
+                <img src="images/developer workshop.png" alt="">
+                <center><button style="cursor: pointer;">Register Now !</button></center>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <a name="question"></a>
+    <section class="question">
+    </div>
+        <div class="container" data-aos="fade-down">
+            <h1 class="quest-h1">Ask a question</h1>
+            <div class="questions">
+                <div class="left">
+                    <form id="form" action="form">
+                        <div class="form-control">
+                            <label for="name">Name</label><br>
+                            <input id="name" name="name" class="name" placeholder="Your Name" type="text">
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email">Email</label><br>
+                            <input id="email" name="email" class="email" placeholder="Your Email" type="email">
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="subject">Subject</label><br>
+                            <input id="subject" name="subject" class="subject" placeholder="Your Subject" type="text">
+                            <small>Error message</small>
+                        </div>
+                        
+                        <div class="form-control">
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="message" class="message" placeholder="Your Message" type="text"></textarea>
+                            <small>Error message</small>
+                        </div>
+
+                         <div class="popup" id="popup-1">
+                             <div class="overlay"></div>
+                            <div class="popup-msg">
+                                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                            <h1>Your question already submitted</h1>
+                         </div>
+                        </div>
+                        <!-- <center><input type="button" class="submit" onclick="togglePopup()" value="Submit"></center> -->
+                        <center><button class="submit" onclick="togglePopup()">Submit</button></center>
+                    </form>
+                </div>
+                <div class="right">
+                    <img src="images/ask a question.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sosmed">
+        <div class="container" data-aos="fade-up">
+            <h1>Social Media</h1>
+            <div class="sosmed-list">
+            <div class="insta">
+                <img src="images/Social Media/IG.png" alt="">
+                <h5>purply.company</h5>
+            </div>
+            <div class="emails">
+                <img src="images/Social Media/Email.png" alt="">
+                <h5>Purply@gmail.com</h5>
+            </div>
+            <div class="twitter">
+                <img src="images/Social Media/Twitter.png" alt="">
+                <h5>purply.company</h5>
+            </div>
+            <div class="facebook">
+                <img src="images/Social Media/FB.png" alt="">
+                <h5>purply.company</h5>
+            </div>
+            <div class="linkedin">
+                <img src="images/Social Media/linkedin.png" alt="">
+                <h5>purply.company</h5>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer-list">
+            <div class="left">
+                <h5>Special Connection With</h5>
+                <img src="images/bncc.png" alt="">
+            </div>
+            <div class="right">
+                <div id="player"><iframe width="500" height="315" src="https://www.youtube.com/embed/L_YjfaLHB0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </div>
+            <div class="center">
+               <center><h5>@2022. All rights reserved.</h5></center>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+</body>
+</html>
